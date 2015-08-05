@@ -7,6 +7,6 @@ describe('the title case path', {:type => :feature}) do
     visit('/')
     fill_in('title', :with => 'green eggs and ham')
     click_button('Send')
-    expec(page).to have_content('Green Eggs and Ham')
+    expect(page).to have_content('Green Eggs and Ham')
   end
-emd
+end
